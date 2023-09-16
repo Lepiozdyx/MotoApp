@@ -11,23 +11,14 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
-    @State private var theories: [TheoryModel] = []
-    
-    func loadData() {
-        theories = DataManager.shared.getTheory()
-    }
-    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(theories, id: \.self) { theory in
-                    Text(theory.title)
+        TabView {
+            TheoryListView(viewModel: TheoryListViewModel())
+                .tabItem {
+                    Label("Theory", systemImage: "book.closed.fill")
                 }
-            }
-            .onAppear(perform: loadData)
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

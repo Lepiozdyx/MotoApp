@@ -15,9 +15,9 @@ struct CardView: View {
             Text(title)
                 .font(.title)
             
-            Image(systemName: "person.circle.fill")
+            Image(systemName: "play.rectangle")
                 .resizable()
-                .frame(width: 100, height: 100)
+                .frame(width: 120, height: 100)
         }
         .padding()
         .frame(width: 200, height: 250)
