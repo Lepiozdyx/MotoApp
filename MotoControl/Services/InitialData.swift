@@ -5,6 +5,8 @@
 //  Created by Alex on 16.09.2023.
 //
 
+import Foundation
+
 struct InitialData {
     static let theoryData = [
         TheoryModel(
@@ -34,8 +36,8 @@ struct InitialData {
         Таким образом, без особых проблем можно в одиночку поднять достаточно тяжёлый мотоцикл. И запомни:
         Не стоит пытаться поднять мотоцикл разгибая спину, так ее можно повредить!
 """,
-            videoURL: nil,
-            image: nil
+            videoURL: URL(string: "https://www.youtube.com/watch?v=iuvEJchW-Uc"),
+            image: "Как поднять упавший мотоцикл?"
         ),
         TheoryModel(
             title: "Посадка на мотоцикле",

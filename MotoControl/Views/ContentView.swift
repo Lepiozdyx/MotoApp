@@ -17,6 +17,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Theory", systemImage: "book.closed.fill")
                 }
+            Text("Example")
+                .tabItem {
+                    Label("Упражнения", systemImage: "figure.outdoor.cycle")
+                }
         }
     }
 }

@@ -13,15 +13,15 @@ struct CardView: View {
     var body: some View {
         VStack(spacing: 40) {
             Text(title)
-                .font(.title)
-            
+                .font(.title2)
+
             Image(systemName: "play.rectangle")
                 .resizable()
-                .frame(width: 120, height: 100)
+                .frame(width: 100, height: 80)
         }
         .padding()
         .frame(width: 200, height: 250)
-        .background(Color(.gray))
+        .background(.thinMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 40))
         .overlay {
             RoundedRectangle(cornerRadius: 40)
@@ -33,6 +33,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(title: "Theory")
+        CardView(title: "Как поднять упавший мотоцикл?")
     }
 }

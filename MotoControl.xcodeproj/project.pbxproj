@@ -15,6 +15,10 @@
 		FA19A04C2AB0A1940006008F /* MotoControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA19A04A2AB0A1940006008F /* MotoControl.xcdatamodeld */; };
 		FA19A0532AB0EEB50006008F /* TheoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19A0522AB0EEB50006008F /* TheoryListView.swift */; };
 		FA19A0572AB110190006008F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19A0562AB110190006008F /* CardView.swift */; };
+		FA3A62F02AB643A7005B85FD /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A62EF2AB643A7005B85FD /* ImageView.swift */; };
+		FA3AD9162AB77E6000DD8367 /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AD9152AB77E6000DD8367 /* FullScreenImageView.swift */; };
+		FA3AD9182AB7872B00DD8367 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AD9172AB7872B00DD8367 /* VideoPlayerView.swift */; };
+		FA3AD91A2AB7A0F400DD8367 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AD9192AB7A0F400DD8367 /* VideoView.swift */; };
 		FA4B8F522AB48B3E00DC3291 /* TheoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B8F512AB48B3E00DC3291 /* TheoryModel.swift */; };
 		FA4B8F542AB48CA100DC3291 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B8F532AB48CA100DC3291 /* DataManager.swift */; };
 		FAEF93FF2AB5DBA000A83DBF /* TheoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF93FE2AB5DBA000A83DBF /* TheoryDetailView.swift */; };
@@ -34,6 +38,10 @@
 		FA19A04B2AB0A1940006008F /* MotoControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MotoControl.xcdatamodel; sourceTree = "<group>"; };
 		FA19A0522AB0EEB50006008F /* TheoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryListView.swift; sourceTree = "<group>"; };
 		FA19A0562AB110190006008F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA3A62EF2AB643A7005B85FD /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		FA3AD9152AB77E6000DD8367 /* FullScreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
+		FA3AD9172AB7872B00DD8367 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		FA3AD9192AB7A0F400DD8367 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		FA4B8F512AB48B3E00DC3291 /* TheoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryModel.swift; sourceTree = "<group>"; };
 		FA4B8F532AB48CA100DC3291 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		FAEF93FE2AB5DBA000A83DBF /* TheoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailView.swift; sourceTree = "<group>"; };
@@ -120,6 +128,10 @@
 				FAEF93FE2AB5DBA000A83DBF /* TheoryDetailView.swift */,
 				FAEF94082AB6285D00A83DBF /* TheoryDetailViewModel.swift */,
 				FA19A0562AB110190006008F /* CardView.swift */,
+				FA3A62EF2AB643A7005B85FD /* ImageView.swift */,
+				FA3AD9152AB77E6000DD8367 /* FullScreenImageView.swift */,
+				FA3AD9172AB7872B00DD8367 /* VideoPlayerView.swift */,
+				FA3AD9192AB7A0F400DD8367 /* VideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,7 +217,9 @@
 				FA19A0532AB0EEB50006008F /* TheoryListView.swift in Sources */,
 				FAEF93FF2AB5DBA000A83DBF /* TheoryDetailView.swift in Sources */,
 				FA19A04C2AB0A1940006008F /* MotoControl.xcdatamodeld in Sources */,
+				FA3AD9162AB77E6000DD8367 /* FullScreenImageView.swift in Sources */,
 				FAEF94092AB6285D00A83DBF /* TheoryDetailViewModel.swift in Sources */,
+				FA3AD91A2AB7A0F400DD8367 /* VideoView.swift in Sources */,
 				FAEF94072AB6270C00A83DBF /* TheoryListViewModel.swift in Sources */,
 				FA19A0492AB0A1940006008F /* Persistence.swift in Sources */,
 				FA4B8F542AB48CA100DC3291 /* DataManager.swift in Sources */,
@@ -214,7 +228,9 @@
 				FAEF94032AB61C3900A83DBF /* TheoryService.swift in Sources */,
 				FA19A0572AB110190006008F /* CardView.swift in Sources */,
 				FA4B8F522AB48B3E00DC3291 /* TheoryModel.swift in Sources */,
+				FA3A62F02AB643A7005B85FD /* ImageView.swift in Sources */,
 				FA19A0402AB0A1930006008F /* MotoControlApp.swift in Sources */,
+				FA3AD9182AB7872B00DD8367 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
