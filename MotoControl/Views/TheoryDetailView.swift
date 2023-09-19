@@ -14,7 +14,7 @@ struct TheoryDetailView: View {
         ScrollView {
             VStack {
                 if let videoUrl = viewModel.theory.videoURL {
-                    VideoPlayerView(videoURL: videoUrl)
+                    VideoView(videoURL: videoUrl)
                         .frame(width: 300, height: 200)
                         .cornerRadius(20)
                         .padding()
