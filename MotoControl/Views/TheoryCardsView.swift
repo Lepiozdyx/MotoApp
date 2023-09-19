@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TheoryCardsView: View {
     @ObservedObject var viewModel: TheoryListViewModel
+    @State private var isShowingListView = false
     
     var body: some View {
         NavigationStack {
@@ -16,7 +17,10 @@ struct TheoryCardsView: View {
                 Text("Теория")
                     .font(.headline)
                 Spacer()
-                Button("См. все", action: {})
+                Button("См. все") {
+                    isShowingListView.toggle()
+                }
+                .background(NavigationLink("", destination: TheoryListView(viewModel: TheoryListViewModel()), isActive: $isShowingListView).opacity(0))
             }
             .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
             
