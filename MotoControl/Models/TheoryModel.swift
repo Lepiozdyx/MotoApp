@@ -10,7 +10,7 @@ import Foundation
 struct TheoryModel: Identifiable, Hashable {
     let title: String
     let definition: String
-    let videoURL: URL?
+    let videoID: String?
     let image: String?
     let id = UUID()
 }

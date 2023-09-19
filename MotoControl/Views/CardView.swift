@@ -31,8 +31,6 @@ struct CardView: View {
     }
 }
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView(title: "Как поднять упавший мотоцикл?")
-    }
+#Preview {
+    CardView(title: "Как поднять упавший мотоцикл?")
 }

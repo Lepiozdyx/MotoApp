@@ -29,9 +29,3 @@ struct ImageView: View {
 #Preview {
     ImageView(image: "Как поднять упавший мотоцикл?")
 }
-
-//struct ImageView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ImageView(image: "Как поднять упавший мотоцикл?")
-//    }
-//}

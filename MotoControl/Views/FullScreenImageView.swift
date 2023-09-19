@@ -25,8 +25,6 @@ struct FullScreenImageView: View {
     }
 }
 
-struct FullScreenImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        FullScreenImageView(image: "Как поднять упавший мотоцикл?", isFullScreen: .constant(true))
-    }
+#Preview {
+    FullScreenImageView(image: "Как поднять упавший мотоцикл?", isFullScreen: .constant(true))
 }

@@ -20,7 +20,7 @@ final class TheoryService {
         let newTheory = Theory(context: persistenceController.container.viewContext)
         newTheory.title = model.title
         newTheory.definition = model.definition
-        newTheory.videoURL = model.videoURL
+        newTheory.videoID = model.videoID
         newTheory.image = model.image
         
         saveContext()
@@ -32,7 +32,7 @@ final class TheoryService {
         do {
             let fetchedTheory = try persistenceController.container.viewContext.fetch(request)
             return fetchedTheory.map {
-                TheoryModel(title: $0.title ?? "", definition: $0.definition ?? "", videoURL: $0.videoURL, image: $0.image)
+                TheoryModel(title: $0.title ?? "", definition: $0.definition ?? "", videoID: $0.videoID, image: $0.image)
             }
         } catch {
             print("Failed to fetch theories: \(error)")
@@ -43,7 +43,7 @@ final class TheoryService {
     func updateTheory(_ theory: Theory, with model: TheoryModel) {
         theory.title = model.title
         theory.definition = model.definition
-        theory.videoURL = model.videoURL
+        theory.videoID = model.videoID
         theory.image = model.image
         
         saveContext()

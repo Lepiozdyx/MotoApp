@@ -13,11 +13,10 @@ struct TheoryDetailView: View {
     var body: some View {
         ScrollView {
             VStack {
-                if let videoUrl = viewModel.theory.videoURL {
-                    VideoView(videoURL: videoUrl)
-                        .frame(width: 300, height: 200)
+                if let videoID = viewModel.theory.videoID {
+                    VideoView(videoID: videoID)
+                        .frame(width: 350, height: 200)
                         .cornerRadius(20)
-                        .padding()
                 }
                 
                 Text(viewModel.theory.definition)
@@ -38,8 +37,6 @@ struct TheoryDetailView: View {
     }
 }
 
-struct TheoryDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        TheoryDetailView(viewModel: TheoryDetailViewModel(theory: TheoryModel(title: "Theory", definition: "Можно смело утверждать, что в жизни каждого мотоциклиста бывает момент, когда перед ним встает вопрос  “как поднять упавший мотоцикл?”. У кого-то он падает чаще, у кого-то реже. И, тем не менее, каждый из нас сталкивается с задачей поднять упавший мот. Вдвоем с помощником, как правило, при подъёме никаких проблем не возникнет. Но что, если мотоцикл тяжёлый, а помочь некому? Чтобы поднять мотоцикл в одиночку, нужно знать определенный способ, как это можно сделать. Сегодня я расскажу о самом простом таком способе.", videoURL: URL(string: "https://www.youtube.com/watch?v=iuvEJchW-Uc"), image: "Как поднять упавший мотоцикл?")))
-    }
+#Preview {
+    TheoryDetailView(viewModel: TheoryDetailViewModel(theory: TheoryModel(title: "Theory", definition: "Можно смело утверждать, что в жизни каждого мотоциклиста бывает момент, когда перед ним встает вопрос  “как поднять упавший мотоцикл?”. У кого-то он падает чаще, у кого-то реже. И, тем не менее, каждый из нас сталкивается с задачей поднять упавший мот. Вдвоем с помощником, как правило, при подъёме никаких проблем не возникнет. Но что, если мотоцикл тяжёлый, а помочь некому? Чтобы поднять мотоцикл в одиночку, нужно знать определенный способ, как это можно сделать. Сегодня я расскажу о самом простом таком способе.", videoID: "iuvEJchW-Uc", image: "Как поднять упавший мотоцикл?")))
 }
