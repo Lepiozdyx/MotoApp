@@ -20,7 +20,9 @@ struct TheoryCardsView: View {
                 Button("См. все") {
                     isShowingListView.toggle()
                 }
-                .background(NavigationLink("", destination: TheoryListView(viewModel: TheoryListViewModel()), isActive: $isShowingListView).opacity(0))
+                .navigationDestination(isPresented: $isShowingListView) {
+                    TheoryListView(viewModel: TheoryListViewModel())
+                }
             }
             .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
             
