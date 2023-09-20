@@ -34,6 +34,7 @@ struct TheoryDetailView: View {
             }
             .navigationTitle(viewModel.theory.title)
         }
+        .background(.thinMaterial)
     }
 }
 

@@ -38,7 +38,6 @@ struct TheoryCardsView: View {
                 .padding()
             }
             Spacer()
-            .navigationTitle("Обучение вождению мотоцикла")
         }
     }
 }
