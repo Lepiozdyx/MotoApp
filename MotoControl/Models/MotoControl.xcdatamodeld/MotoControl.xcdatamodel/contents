@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="22G91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="22G120" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Theory" representedClassName="Theory" syncable="YES" codeGenerationType="class">
         <attribute name="definition" attributeType="String"/>
         <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="title" attributeType="String"/>
         <attribute name="videoID" optional="YES" attributeType="String"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TheoryImage" inverseName="theory" inverseEntity="TheoryImage"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TheoryVideo" inverseName="theory" inverseEntity="TheoryVideo"/>
+    </entity>
+    <entity name="TheoryImage" representedClassName="TheoryImage" syncable="YES" codeGenerationType="class">
+        <attribute name="filename" optional="YES" attributeType="String"/>
+        <relationship name="theory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theory" inverseName="images" inverseEntity="Theory"/>
+    </entity>
+    <entity name="TheoryVideo" representedClassName="TheoryVideo" syncable="YES" codeGenerationType="class">
+        <attribute name="filename" optional="YES" attributeType="String"/>
+        <relationship name="theory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theory" inverseName="videos" inverseEntity="Theory"/>
     </entity>
 </model>

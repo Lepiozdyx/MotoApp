@@ -17,11 +17,28 @@ final class TheoryService {
     
     // MARK: CRUD
     func createTheory(with model: TheoryModel) {
-        let newTheory = Theory(context: persistenceController.container.viewContext)
+        let context = persistenceController.container.viewContext
+        let newTheory = Theory(context: context)
         newTheory.title = model.title
         newTheory.definition = model.definition
-        newTheory.videoID = model.videoID
-        newTheory.image = model.image
+        
+        // Создание объектов TheoryImage и добавление их к Theory
+        if let images = model.image {
+            images.forEach { image in
+                let theoryImage = TheoryImage(context: context)
+                theoryImage.filename = image
+                newTheory.addToImages(theoryImage)
+            }
+        }
+        
+        // Создание объектов TheoryVideo и добавление их к Theory
+        if let videos = model.videoID {
+            videos.forEach { video in
+                let theoryVideo = TheoryVideo(context: context)
+                theoryVideo.filename = video
+                newTheory.addToVideos(theoryVideo)
+            }
+        }
         
         saveContext()
     }
@@ -31,8 +48,16 @@ final class TheoryService {
         
         do {
             let fetchedTheory = try persistenceController.container.viewContext.fetch(request)
-            return fetchedTheory.map {
-                TheoryModel(title: $0.title ?? "", definition: $0.definition ?? "", videoID: $0.videoID, image: $0.image)
+            return fetchedTheory.map { theory in
+                let images = theory.images?.allObjects as? [TheoryImage]
+                let videos = theory.videos?.allObjects as? [TheoryVideo]
+                
+                return TheoryModel(
+                    title: theory.title ?? "",
+                    definition: theory.definition ?? "",
+                    videoID: videos?.compactMap { $0.filename },
+                    image: images?.compactMap { $0.filename }
+                )
             }
         } catch {
             print("Failed to fetch theories: \(error)")
@@ -41,10 +66,10 @@ final class TheoryService {
     }
     
     func updateTheory(_ theory: Theory, with model: TheoryModel) {
+        let context = persistenceController.container.viewContext
         theory.title = model.title
         theory.definition = model.definition
-        theory.videoID = model.videoID
-        theory.image = model.image
+        // TODO: логику обновления изображений и видео. Например, удалить старые и добавить новые.
         
         saveContext()
     }
@@ -55,9 +80,10 @@ final class TheoryService {
     }
     
     private func saveContext() {
-        if persistenceController.container.viewContext.hasChanges {
+        let context = persistenceController.container.viewContext
+        if context.hasChanges {
             do {
-                try persistenceController.container.viewContext.save()
+                try context.save()
             } catch {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
