@@ -66,7 +66,7 @@ final class TheoryService {
     }
     
     func updateTheory(_ theory: Theory, with model: TheoryModel) {
-        let context = persistenceController.container.viewContext
+//        let context = persistenceController.container.viewContext
         theory.title = model.title
         theory.definition = model.definition
         // TODO: логику обновления изображений и видео. Например, удалить старые и добавить новые.

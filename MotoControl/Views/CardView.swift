@@ -30,23 +30,6 @@ struct CardView: View {
                 .offset(x: 0, y: 50)
                 
         }
-//        VStack(spacing: 40) {
-//            Text(title)
-//                .font(.title3)
-//            Spacer()
-//            Image(systemName: "play.rectangle")
-//                .resizable()
-//                .frame(width: 100, height: 80)
-//        }
-//        .padding()
-//        .frame(width: 200, height: 250)
-//        .background(.thinMaterial)
-//        .clipShape(RoundedRectangle(cornerRadius: 40))
-//        .overlay {
-//            RoundedRectangle(cornerRadius: 40)
-//                .stroke(.gray, lineWidth: 1)
-//        }
-//        .shadow(color: .white, radius: 10)
     }
 }
 
