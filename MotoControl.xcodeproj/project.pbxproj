@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA10644B2AC07A0400696135 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10644A2AC07A0400696135 /* HeaderView.swift */; };
 		FA19A0402AB0A1930006008F /* MotoControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19A03F2AB0A1930006008F /* MotoControlApp.swift */; };
 		FA19A0422AB0A1930006008F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19A0412AB0A1930006008F /* ContentView.swift */; };
 		FA19A0442AB0A1940006008F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA19A0432AB0A1940006008F /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA10644A2AC07A0400696135 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		FA19A03C2AB0A1930006008F /* MotoControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotoControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA19A03F2AB0A1930006008F /* MotoControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoControlApp.swift; sourceTree = "<group>"; };
 		FA19A0412AB0A1930006008F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				FA19A0412AB0A1930006008F /* ContentView.swift */,
 				FA19A0522AB0EEB50006008F /* TheoryCardsView.swift */,
+				FA10644A2AC07A0400696135 /* HeaderView.swift */,
 				FA83F0DA2ABA455100D410F6 /* TheoryListView.swift */,
 				FAEF94062AB6270C00A83DBF /* TheoryListViewModel.swift */,
 				FAEF93FE2AB5DBA000A83DBF /* TheoryDetailView.swift */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA19A0532AB0EEB50006008F /* TheoryCardsView.swift in Sources */,
+				FA10644B2AC07A0400696135 /* HeaderView.swift in Sources */,
 				FAEF93FF2AB5DBA000A83DBF /* TheoryDetailView.swift in Sources */,
 				FA19A04C2AB0A1940006008F /* MotoControl.xcdatamodeld in Sources */,
 				FA83F0DB2ABA455100D410F6 /* TheoryListView.swift in Sources */,

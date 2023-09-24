@@ -9,22 +9,12 @@ import SwiftUI
 
 struct TheoryCardsView: View {
     @ObservedObject var viewModel: TheoryListViewModel
-    @State private var isShowingListView = false
     
     var body: some View {
         NavigationStack {
-            HStack {
-                Text("Теория")
-                    .font(.headline)
-                Spacer()
-                Button("См. все") {
-                    isShowingListView.toggle()
-                }
-                .navigationDestination(isPresented: $isShowingListView) {
-                    TheoryListView(viewModel: TheoryListViewModel())
-                }
+            HeaderView(title: "Теория") {
+                TheoryListView(viewModel: TheoryListViewModel())
             }
-            .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
