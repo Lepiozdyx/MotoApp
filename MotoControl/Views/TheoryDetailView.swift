@@ -16,7 +16,7 @@ struct TheoryDetailView: View {
                 if let videoID = viewModel.theory.videoID {
                     ForEach(videoID, id: \.self) { video in
                         VideoView(videoID: video)
-                            .frame(width: 350, height: 200)
+                            .frame(width: 350, height: 220)
                             .cornerRadius(20)
                     }
                 }

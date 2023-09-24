@@ -14,8 +14,8 @@ struct ImageView: View {
     var body: some View {
         Image(image)
             .resizable()
-            .scaledToFit()
-            .frame(width: 300)
+            .scaledToFill()
+            .frame(width: 300,height: 220)
             .cornerRadius(20)
             .onTapGesture {
                 isFullScreen.toggle()
@@ -27,5 +27,5 @@ struct ImageView: View {
 }
 
 #Preview {
-    ImageView(image: "Как поднять упавший мотоцикл?")
+    ImageView(image: "ТорможениеСАБС")
 }
