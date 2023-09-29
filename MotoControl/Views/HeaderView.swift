@@ -10,7 +10,7 @@ import SwiftUI
 struct HeaderView<Destination: View>: View {
     @State private var isShowingListView = false
     let title: String
-    let viewAction: () -> Destination
+    let destination: () -> Destination
     
     var body: some View {
         HStack {
@@ -20,7 +20,7 @@ struct HeaderView<Destination: View>: View {
             Button("См. все") {
                 isShowingListView.toggle()
             }
-            .navigationDestination(isPresented: $isShowingListView, destination: viewAction)
+            .navigationDestination(isPresented: $isShowingListView, destination: destination)
         }
         .padding(EdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16))
     }
