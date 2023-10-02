@@ -28,6 +28,6 @@ struct HeaderView<Destination: View>: View {
 
 #Preview {
     HeaderView(title: "Теория") {
-        TheoryListView(viewModel: TheoryListViewModel())
+        ContentListView(viewModel: ContentListViewModel(contentType: .theory))
     }
 }

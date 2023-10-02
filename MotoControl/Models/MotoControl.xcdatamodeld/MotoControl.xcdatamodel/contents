@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="22G120" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Theory" representedClassName="Theory" syncable="YES" codeGenerationType="class">
+    <entity name="Content" representedClassName="Content" syncable="YES" codeGenerationType="class">
+        <attribute name="contentType" attributeType="String"/>
         <attribute name="definition" attributeType="String"/>
         <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="title" attributeType="String"/>
         <attribute name="videoID" optional="YES" attributeType="String"/>
-        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TheoryImage" inverseName="theory" inverseEntity="TheoryImage"/>
-        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TheoryVideo" inverseName="theory" inverseEntity="TheoryVideo"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContentImage" inverseName="theory" inverseEntity="ContentImage"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ContentVideo" inverseName="theory" inverseEntity="ContentVideo"/>
     </entity>
-    <entity name="TheoryImage" representedClassName="TheoryImage" syncable="YES" codeGenerationType="class">
+    <entity name="ContentImage" representedClassName="ContentImage" syncable="YES" codeGenerationType="class">
         <attribute name="filename" optional="YES" attributeType="String"/>
-        <relationship name="theory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theory" inverseName="images" inverseEntity="Theory"/>
+        <relationship name="theory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Content" inverseName="images" inverseEntity="Content"/>
     </entity>
-    <entity name="TheoryVideo" representedClassName="TheoryVideo" syncable="YES" codeGenerationType="class">
+    <entity name="ContentVideo" representedClassName="ContentVideo" syncable="YES" codeGenerationType="class">
         <attribute name="filename" optional="YES" attributeType="String"/>
-        <relationship name="theory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theory" inverseName="videos" inverseEntity="Theory"/>
+        <relationship name="theory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Content" inverseName="videos" inverseEntity="Content"/>
     </entity>
 </model>

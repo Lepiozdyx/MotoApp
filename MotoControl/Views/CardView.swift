@@ -34,5 +34,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(title: "Как поднять упавший мотоцикл?")
+    CardView(title: "КакПоднятьУпавшийМотоцикл?")
 }

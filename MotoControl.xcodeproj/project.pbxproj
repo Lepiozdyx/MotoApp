@@ -14,19 +14,19 @@
 		FA19A0472AB0A1940006008F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA19A0462AB0A1940006008F /* Preview Assets.xcassets */; };
 		FA19A0492AB0A1940006008F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19A0482AB0A1940006008F /* Persistence.swift */; };
 		FA19A04C2AB0A1940006008F /* MotoControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA19A04A2AB0A1940006008F /* MotoControl.xcdatamodeld */; };
-		FA19A0532AB0EEB50006008F /* TheoryCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19A0522AB0EEB50006008F /* TheoryCardsView.swift */; };
+		FA19A0532AB0EEB50006008F /* ContentCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19A0522AB0EEB50006008F /* ContentCardsView.swift */; };
 		FA19A0572AB110190006008F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19A0562AB110190006008F /* CardView.swift */; };
 		FA3A62F02AB643A7005B85FD /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A62EF2AB643A7005B85FD /* ImageView.swift */; };
 		FA3AD9162AB77E6000DD8367 /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AD9152AB77E6000DD8367 /* FullScreenImageView.swift */; };
-		FA4B8F522AB48B3E00DC3291 /* TheoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B8F512AB48B3E00DC3291 /* TheoryModel.swift */; };
+		FA4B8F522AB48B3E00DC3291 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B8F512AB48B3E00DC3291 /* ContentModel.swift */; };
 		FA4B8F542AB48CA100DC3291 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B8F532AB48CA100DC3291 /* DataManager.swift */; };
-		FA83F0DB2ABA455100D410F6 /* TheoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83F0DA2ABA455100D410F6 /* TheoryListView.swift */; };
+		FA83F0DB2ABA455100D410F6 /* ContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83F0DA2ABA455100D410F6 /* ContentListView.swift */; };
 		FA8E8EDF2ABA39FA004FFB32 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E8EDE2ABA39FA004FFB32 /* VideoView.swift */; };
-		FAEF93FF2AB5DBA000A83DBF /* TheoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF93FE2AB5DBA000A83DBF /* TheoryDetailView.swift */; };
-		FAEF94032AB61C3900A83DBF /* TheoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF94022AB61C3900A83DBF /* TheoryService.swift */; };
+		FAEF93FF2AB5DBA000A83DBF /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF93FE2AB5DBA000A83DBF /* ContentDetailView.swift */; };
+		FAEF94032AB61C3900A83DBF /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF94022AB61C3900A83DBF /* ContentService.swift */; };
 		FAEF94052AB6200D00A83DBF /* InitialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF94042AB6200D00A83DBF /* InitialData.swift */; };
-		FAEF94072AB6270C00A83DBF /* TheoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF94062AB6270C00A83DBF /* TheoryListViewModel.swift */; };
-		FAEF94092AB6285D00A83DBF /* TheoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF94082AB6285D00A83DBF /* TheoryDetailViewModel.swift */; };
+		FAEF94072AB6270C00A83DBF /* ContentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF94062AB6270C00A83DBF /* ContentListViewModel.swift */; };
+		FAEF94092AB6285D00A83DBF /* ContentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF94082AB6285D00A83DBF /* ContentDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,19 +38,19 @@
 		FA19A0462AB0A1940006008F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA19A0482AB0A1940006008F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FA19A04B2AB0A1940006008F /* MotoControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MotoControl.xcdatamodel; sourceTree = "<group>"; };
-		FA19A0522AB0EEB50006008F /* TheoryCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryCardsView.swift; sourceTree = "<group>"; };
+		FA19A0522AB0EEB50006008F /* ContentCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardsView.swift; sourceTree = "<group>"; };
 		FA19A0562AB110190006008F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA3A62EF2AB643A7005B85FD /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		FA3AD9152AB77E6000DD8367 /* FullScreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
-		FA4B8F512AB48B3E00DC3291 /* TheoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryModel.swift; sourceTree = "<group>"; };
+		FA4B8F512AB48B3E00DC3291 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		FA4B8F532AB48CA100DC3291 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		FA83F0DA2ABA455100D410F6 /* TheoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryListView.swift; sourceTree = "<group>"; };
+		FA83F0DA2ABA455100D410F6 /* ContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListView.swift; sourceTree = "<group>"; };
 		FA8E8EDE2ABA39FA004FFB32 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		FAEF93FE2AB5DBA000A83DBF /* TheoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailView.swift; sourceTree = "<group>"; };
-		FAEF94022AB61C3900A83DBF /* TheoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryService.swift; sourceTree = "<group>"; };
+		FAEF93FE2AB5DBA000A83DBF /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		FAEF94022AB61C3900A83DBF /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
 		FAEF94042AB6200D00A83DBF /* InitialData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialData.swift; sourceTree = "<group>"; };
-		FAEF94062AB6270C00A83DBF /* TheoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryListViewModel.swift; sourceTree = "<group>"; };
-		FAEF94082AB6285D00A83DBF /* TheoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailViewModel.swift; sourceTree = "<group>"; };
+		FAEF94062AB6270C00A83DBF /* ContentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListViewModel.swift; sourceTree = "<group>"; };
+		FAEF94082AB6285D00A83DBF /* ContentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				FA19A04A2AB0A1940006008F /* MotoControl.xcdatamodeld */,
-				FA4B8F512AB48B3E00DC3291 /* TheoryModel.swift */,
+				FA4B8F512AB48B3E00DC3291 /* ContentModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 				FA4B8F532AB48CA100DC3291 /* DataManager.swift */,
 				FAEF94042AB6200D00A83DBF /* InitialData.swift */,
 				FA19A0482AB0A1940006008F /* Persistence.swift */,
-				FAEF94022AB61C3900A83DBF /* TheoryService.swift */,
+				FAEF94022AB61C3900A83DBF /* ContentService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -125,12 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				FA19A0412AB0A1930006008F /* ContentView.swift */,
-				FA19A0522AB0EEB50006008F /* TheoryCardsView.swift */,
+				FA19A0522AB0EEB50006008F /* ContentCardsView.swift */,
 				FA10644A2AC07A0400696135 /* HeaderView.swift */,
-				FA83F0DA2ABA455100D410F6 /* TheoryListView.swift */,
-				FAEF94062AB6270C00A83DBF /* TheoryListViewModel.swift */,
-				FAEF93FE2AB5DBA000A83DBF /* TheoryDetailView.swift */,
-				FAEF94082AB6285D00A83DBF /* TheoryDetailViewModel.swift */,
+				FA83F0DA2ABA455100D410F6 /* ContentListView.swift */,
+				FAEF94062AB6270C00A83DBF /* ContentListViewModel.swift */,
+				FAEF93FE2AB5DBA000A83DBF /* ContentDetailView.swift */,
+				FAEF94082AB6285D00A83DBF /* ContentDetailViewModel.swift */,
 				FA19A0562AB110190006008F /* CardView.swift */,
 				FA3A62EF2AB643A7005B85FD /* ImageView.swift */,
 				FA3AD9152AB77E6000DD8367 /* FullScreenImageView.swift */,
@@ -217,22 +217,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA19A0532AB0EEB50006008F /* TheoryCardsView.swift in Sources */,
+				FA19A0532AB0EEB50006008F /* ContentCardsView.swift in Sources */,
 				FA10644B2AC07A0400696135 /* HeaderView.swift in Sources */,
-				FAEF93FF2AB5DBA000A83DBF /* TheoryDetailView.swift in Sources */,
+				FAEF93FF2AB5DBA000A83DBF /* ContentDetailView.swift in Sources */,
 				FA19A04C2AB0A1940006008F /* MotoControl.xcdatamodeld in Sources */,
-				FA83F0DB2ABA455100D410F6 /* TheoryListView.swift in Sources */,
+				FA83F0DB2ABA455100D410F6 /* ContentListView.swift in Sources */,
 				FA3AD9162AB77E6000DD8367 /* FullScreenImageView.swift in Sources */,
-				FAEF94092AB6285D00A83DBF /* TheoryDetailViewModel.swift in Sources */,
+				FAEF94092AB6285D00A83DBF /* ContentDetailViewModel.swift in Sources */,
 				FA8E8EDF2ABA39FA004FFB32 /* VideoView.swift in Sources */,
-				FAEF94072AB6270C00A83DBF /* TheoryListViewModel.swift in Sources */,
+				FAEF94072AB6270C00A83DBF /* ContentListViewModel.swift in Sources */,
 				FA19A0492AB0A1940006008F /* Persistence.swift in Sources */,
 				FA4B8F542AB48CA100DC3291 /* DataManager.swift in Sources */,
 				FAEF94052AB6200D00A83DBF /* InitialData.swift in Sources */,
 				FA19A0422AB0A1930006008F /* ContentView.swift in Sources */,
-				FAEF94032AB61C3900A83DBF /* TheoryService.swift in Sources */,
+				FAEF94032AB61C3900A83DBF /* ContentService.swift in Sources */,
 				FA19A0572AB110190006008F /* CardView.swift in Sources */,
-				FA4B8F522AB48B3E00DC3291 /* TheoryModel.swift in Sources */,
+				FA4B8F522AB48B3E00DC3291 /* ContentModel.swift in Sources */,
 				FA3A62F02AB643A7005B85FD /* ImageView.swift in Sources */,
 				FA19A0402AB0A1930006008F /* MotoControlApp.swift in Sources */,
 			);

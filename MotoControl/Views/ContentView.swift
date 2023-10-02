@@ -9,11 +9,11 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+//    @Environment(\.managedObjectContext) private var viewContext
     
     var body: some View {
         TabView {
-            TheoryCardsView(viewModel: TheoryListViewModel())
+            ContentCardsView(viewModel: ContentListViewModel(contentType: .theory))
                 .tabItem {
                     Label("Theory", systemImage: "book.closed.fill")
                 }

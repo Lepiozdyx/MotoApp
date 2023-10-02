@@ -26,5 +26,5 @@ struct FullScreenImageView: View {
 }
 
 #Preview {
-    FullScreenImageView(image: "Как поднять упавший мотоцикл?", isFullScreen: .constant(true))
+    FullScreenImageView(image: "КакПоднятьУпавшийМотоцикл?", isFullScreen: .constant(true))
 }

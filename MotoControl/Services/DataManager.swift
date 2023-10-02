@@ -9,28 +9,31 @@ final class DataManager {
     static let shared = DataManager()
     
     private let persistenceController: PersistenceController
-    private let theoryService: TheoryService
+    private let contentService: ContentService
     
     private init() {
         self.persistenceController = PersistenceController.shared
-        self.theoryService = TheoryService(persistenceController: persistenceController)
+        self.contentService = ContentService(persistenceController: persistenceController)
         
         populateInitialDataIfNeeded()
     }
     
-    func createTheory(with model: TheoryModel) {
-        theoryService.createTheory(with: model)
+    func createContent(with model: ContentModel) {
+        contentService.createContent(with: model)
     }
     
-    func getTheory() -> [TheoryModel] {
-        return theoryService.fetchTheories()
+    func getContent(_ type: ContentType) -> [ContentModel] {
+        return contentService.fetchContents(type)
     }
     
     private func populateInitialDataIfNeeded() {
-        let existingTheories = theoryService.fetchTheories()
-        
-        if existingTheories.isEmpty {
-            InitialData.theoryData.forEach { createTheory(with: $0) }
+        let existingContents = getContent(.theory) + getContent(.roadStrategy)
+        // Здесь может потребоваться проверка для каждого типа контента
+        // или, если InitialData содержит разные типы контента, можно выполнить проверку для каждого типа контента в InitialData
+                
+        if existingContents.isEmpty {
+            InitialData.theoryData.forEach { createContent(with: $0) }
+            InitialData.roadStrategyData.forEach { createContent(with: $0) }
         }
     }
 }
