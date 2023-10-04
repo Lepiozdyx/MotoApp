@@ -12,12 +12,10 @@ struct ContentCardsView: View {
     
     var body: some View {
         NavigationStack {
-            HeaderView(title: "Теория") {
-                ContentListView(viewModel: ContentListViewModel(contentType: .theory))
-            }
+            HeaderView(contentType: viewModel.contentType)
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 10) {
                     ForEach(viewModel.contents, id: \.self) { content in
                         NavigationLink(destination: ContentDetailView(viewModel: ContentDetailViewModel(content: content))) {
                             CardView(title: content.title)
@@ -27,6 +25,7 @@ struct ContentCardsView: View {
                 }
                 .padding()
             }
+            
             Spacer()
         }
     }

@@ -7,10 +7,17 @@
 
 import SwiftUI
 
-struct HeaderView<Destination: View>: View {
+struct HeaderView: View {
     @State private var isShowingListView = false
-    let title: String
-    let destination: () -> Destination
+    let contentType: ContentType
+    var title: String {
+        switch contentType {
+        case .theory:
+            "Теория"
+        case .roadStrategy:
+            "Дорожная стратегия"
+        }
+    }
     
     var body: some View {
         HStack {
@@ -20,14 +27,16 @@ struct HeaderView<Destination: View>: View {
             Button("См. все") {
                 isShowingListView.toggle()
             }
-            .navigationDestination(isPresented: $isShowingListView, destination: destination)
+            .navigationDestination(isPresented: $isShowingListView, destination: getDestination)
         }
         .padding(EdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16))
+    }
+    
+    private func getDestination() -> some View {
+        ContentListView(viewModel: ContentListViewModel(contentType: contentType))
     }
 }
 
 #Preview {
-    HeaderView(title: "Теория") {
-        ContentListView(viewModel: ContentListViewModel(contentType: .theory))
-    }
+    HeaderView(contentType: .roadStrategy)
 }

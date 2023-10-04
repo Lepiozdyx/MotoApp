@@ -10,7 +10,7 @@ import Foundation
 final class ContentListViewModel: ObservableObject {
     @Published var contents: [ContentModel] = []
     private let dataManager = DataManager.shared
-    private let contentType: ContentType
+    let contentType: ContentType
     
     init(contentType: ContentType) {
         self.contentType = contentType

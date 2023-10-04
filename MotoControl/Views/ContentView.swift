@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
-//    @Environment(\.managedObjectContext) private var viewContext
     
     var body: some View {
         TabView {
             ContentCardsView(viewModel: ContentListViewModel(contentType: .theory))
                 .tabItem {
-                    Label("Theory", systemImage: "book.closed.fill")
+                    Label("Теория", systemImage: "text.book.closed.fill")
+                }
+            ContentCardsView(viewModel: ContentListViewModel(contentType: .roadStrategy))
+                .tabItem {
+                    Label("Дорожная стратегия", systemImage: "arrowshape.down.circle.fill")
                 }
             Text("Example")
                 .tabItem {
