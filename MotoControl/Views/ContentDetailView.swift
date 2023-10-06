@@ -28,7 +28,7 @@ struct ContentDetailView: View {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(image, id: \.self) { image in
-                                ImageView(image: image)
+                                ImageView(image: image, width: 250, height: 160)
                             }
                         }
                         .padding()

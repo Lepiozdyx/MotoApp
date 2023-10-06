@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ImageView: View {
-    let image: String
     @State private var isFullScreen: Bool = false
+    let image: String
+    let width: CGFloat
+    let height: CGFloat
     
     var body: some View {
         Image(image)
             .resizable()
             .scaledToFill()
-            .frame(width: 300,height: 220)
+            .frame(width: width,height: height)
             .cornerRadius(20)
             .onTapGesture {
                 isFullScreen.toggle()
@@ -27,5 +29,5 @@ struct ImageView: View {
 }
 
 #Preview {
-    ImageView(image: "ТорможениеСАБС")
+    ImageView(image: "ТорможениеСАБС", width: 320, height: 220)
 }
