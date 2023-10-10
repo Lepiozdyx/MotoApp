@@ -8,22 +8,24 @@
 import SwiftUI
 
 struct ImageView: View {
-    @State private var isFullScreen: Bool = false
     let image: String
     let width: CGFloat
     let height: CGFloat
+    @State private var isZoomed: Bool = false
     
     var body: some View {
         Image(image)
             .resizable()
             .scaledToFill()
-            .frame(width: width,height: height)
+            .frame(
+                width: isZoomed ? width * 1.5 : width,
+                height: isZoomed ? height * 1.5 : height
+            )
             .cornerRadius(20)
             .onTapGesture {
-                isFullScreen.toggle()
-            }
-            .fullScreenCover(isPresented: $isFullScreen) {
-                FullScreenImageView(image: image, isFullScreen: $isFullScreen)
+                withAnimation(.easeInOut) {
+                    isZoomed.toggle()
+                }
             }
     }
 }

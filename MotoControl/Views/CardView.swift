@@ -23,7 +23,7 @@ struct CardView: View {
                 .frame(width: 350, height: 100, alignment: .top)
                 .offset(x: 0, y: -40)
                 
-            Image(systemName: "play.rectangle")
+            Image(systemName: "camera")
                 .resizable()
                 .foregroundStyle(.secondary)
                 .frame(width: 100, height: 80)

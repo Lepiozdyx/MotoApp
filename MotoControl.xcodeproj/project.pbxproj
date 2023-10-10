@@ -133,8 +133,8 @@
 				FAEF94082AB6285D00A83DBF /* ContentDetailViewModel.swift */,
 				FA19A0562AB110190006008F /* CardView.swift */,
 				FA3A62EF2AB643A7005B85FD /* ImageView.swift */,
-				FA3AD9152AB77E6000DD8367 /* FullScreenImageView.swift */,
 				FA8E8EDE2ABA39FA004FFB32 /* VideoView.swift */,
+				FA3AD9152AB77E6000DD8367 /* FullScreenImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
