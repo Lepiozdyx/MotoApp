@@ -47,6 +47,8 @@ final class ContentService {
     func fetchContents(_ type: ContentType) -> [ContentModel] {
         let request: NSFetchRequest<Content> = Content.fetchRequest()
         request.predicate = NSPredicate(format: "contentType == %@", type.rawValue)
+        // предварительно извлекаем связанные объекты images и videos в одном запросе, уменьшая общее количество запросов к базе данных.
+        request.relationshipKeyPathsForPrefetching = ["images", "videos"]
         
         do {
             let fetchedContents = try persistenceController.container.viewContext.fetch(request)
