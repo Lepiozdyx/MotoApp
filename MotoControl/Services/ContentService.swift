@@ -85,6 +85,19 @@ final class ContentService {
         saveContext()
     }
     
+    // проверяем, пуста ли база данных
+    func isDatabaseEmpty() -> Bool {
+        let request: NSFetchRequest<Content> = Content.fetchRequest()
+        request.fetchLimit = 1
+        do {
+            let count = try persistenceController.container.viewContext.count(for: request)
+            return count == 0
+        } catch {
+            print("Error checking if database is empty: \(error)")
+            return false
+        }
+    }
+    
     private func saveContext() {
         let context = persistenceController.container.viewContext
         if context.hasChanges {

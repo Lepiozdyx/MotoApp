@@ -26,12 +26,9 @@ final class DataManager {
         return contentService.fetchContents(type)
     }
     
+    // инициализируем базу данных начальными данными, если она пуста
     private func populateInitialDataIfNeeded() {
-        let existingContents = getContent(.theory) + getContent(.roadStrategy)
-        // Здесь может потребоваться проверка для каждого типа контента
-        // или, если InitialData содержит разные типы контента, можно выполнить проверку для каждого типа контента в InitialData
-                
-        if existingContents.isEmpty {
+        if contentService.isDatabaseEmpty() {
             InitialData.theoryData.forEach { createContent(with: $0) }
             InitialData.roadStrategyData.forEach { createContent(with: $0) }
         }
