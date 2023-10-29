@@ -18,6 +18,7 @@ struct ContentDetailView: View {
                         VideoView(videoID: video)
                             .frame(width: 350, height: 220)
                             .cornerRadius(20)
+                            .shadow(radius: 5)
                     }
                 }
                 

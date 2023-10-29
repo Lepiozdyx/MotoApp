@@ -22,6 +22,7 @@ struct ImageView: View {
                 height: isZoomed ? height * 1.5 : height
             )
             .cornerRadius(20)
+            .shadow(radius: 5)
             .onTapGesture {
                 withAnimation(.easeInOut) {
                     isZoomed.toggle()

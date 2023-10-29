@@ -23,7 +23,6 @@ struct ContentCardsView: View {
                         .buttonStyle(.plain)
                     }
                 }
-                .padding()
             }
             
             Spacer()

@@ -14,8 +14,9 @@ struct CardView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundStyle(Color(.milkGreen))
-                .frame(width: 350, height: 200)
-                .shadow(color: .black, radius: 2)
+                .frame(width: .infinity, height: 200)
+                .padding([.leading, .trailing], 16)
+                .shadow(radius: 2)
             
             Text(title)
                 .font(.title3)
